@@ -1,0 +1,15 @@
+@import url(reset.css);
+/* @import url(../fonts/pokemon-hollow.ttf);
+@import url(../fonts/pokemon-solid.ttf);
+@import url(../fonts/press-start-2p.ttf); */
+
+@font-face {
+  font-family: PokemonSolid;
+  src: url(../fonts//pokemon-solid.ttf);
+}
+
+h1,
+h2,
+h3 {
+  font-family: PokemonSolid;
+}

@@ -1,15 +1,48 @@
 @import url(reset.css);
-/* @import url(../fonts/pokemon-hollow.ttf);
-@import url(../fonts/pokemon-solid.ttf);
-@import url(../fonts/press-start-2p.ttf); */
 
 @font-face {
   font-family: PokemonSolid;
-  src: url(../fonts//pokemon-solid.ttf);
+  src: url(../fonts/pokemon-solid.ttf);
 }
 
-h1,
-h2,
-h3 {
-  font-family: PokemonSolid;
+@font-face {
+  font-family: PressStart2P;
+  src: url(../fonts/press-start-2p.ttf);
+}
+
+@font-face {
+  font-family: PoppinsThin;
+  src: url(../fonts/poppins-thin.ttf);
+}
+
+h1 {
+  font-family: PokemonSolid, sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: PressStart2P, sans-serif;
+  text-transform: uppercase;
+}
+
+span {
+  font-family: PoppinsThin, sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
+
+#app {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 2rem;
+  margin: 0.1rem;
+  width: 33%;
 }

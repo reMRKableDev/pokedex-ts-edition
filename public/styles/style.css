@@ -18,6 +18,7 @@
 h1 {
   font-family: PokemonSolid, sans-serif;
   letter-spacing: 5px;
+  margin-bottom: 30px;
   text-align: center;
   text-decoration: underline;
 }
@@ -25,6 +26,7 @@ h1 {
 h2 {
   font-family: PressStart2P, sans-serif;
   text-transform: uppercase;
+  font-size: 2vw;
 }
 
 span {
@@ -32,17 +34,28 @@ span {
 }
 
 main {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 #app {
+  border: 10px double black;
   display: flex;
   flex-flow: row wrap;
+  overflow: scroll;
+  height: 70vh;
+  padding: 2rem;
 }
 
 .card {
-  border: 2px solid black;
-  padding: 2rem;
+  border: 2px solid #003a70;
+  background-color: #ffcb05;
+  padding: 1rem;
   margin: 0.1rem;
+  transition: all 0.2s ease-in-out;
   width: 33%;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0px 10px #777;
 }

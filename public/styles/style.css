@@ -15,24 +15,31 @@
   src: url(../fonts/poppins-thin.ttf);
 }
 
-h1 {
+a {
+  color: #003a70;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header > h1 {
   color: #ffcb05;
   font-family: PokemonSolid, sans-serif;
   letter-spacing: 5px;
   margin-bottom: 30px;
-  text-align: center;
   text-decoration: underline;
   -webkit-text-stroke: 3px #003a70;
 }
 
-h2 {
-  color: #3d7dca;
-  font-family: PressStart2P, sans-serif;
-  font-size: 2vw;
-  text-transform: uppercase;
-}
-
-span {
+span,
+p {
   font-family: PoppinsThin, sans-serif;
 }
 
@@ -45,8 +52,9 @@ main {
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
-  height: 70vh;
+  height: 60vh;
   padding: 2rem;
+  margin: 1rem 0;
 }
 
 .card {
@@ -61,4 +69,11 @@ main {
 .card:hover {
   transform: scale(1.1);
   box-shadow: 0 0px 10px #777;
+}
+
+.card > h2 {
+  color: #3d7dca;
+  font-family: PressStart2P, sans-serif;
+  font-size: 2vw;
+  text-transform: uppercase;
 }

@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Pokédex (TypeScript Edition) 🚀🚀🚀
 
-You can use the [editor on GitHub](https://github.com/reMRKableDev/pokedex-ts-edition/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+A simple Pokédex built with TypeScript. Makes use of the PokéApi to call in data asynchronously.
+This main purpose of this project is to learn how to use TypeScript on the DOM.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Colors used are found 👉 [here](assets/pokemon-colors.png) 👈
 
-### Markdown
+![pokedex-gif](./assets/pokedex.gif)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Getting Started 🏁
 
-```markdown
-Syntax highlighted code block
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-# Header 1
-## Header 2
-### Header 3
+### Prerequisites
 
-- Bulleted
-- List
+What things you need installed on your local machine.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+Text editor
+TypeScript installed
+Git
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### How To:
 
-### Jekyll Themes
+To use the app:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/reMRKableDev/pokedex-ts-edition/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```
+1. Fork and/or Clone repo.
+2. Launch the 'index.html' file in your local environment.
+```
 
-### Support or Contact
+Have fun :)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Authors 💻
+
+- **Malcolm R. Kente** - _Initial work_ - [reMRKable Dev](https://remrkabledev.com/)
+
+## Acknowledgments 🗣️
+
+This project was made by following the guide of [Ibrahim Ndaw's repo](https://github.com/ibrahima92/pokedex-typescript)

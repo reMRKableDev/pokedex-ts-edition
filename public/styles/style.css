@@ -20,6 +20,7 @@ a {
 }
 
 header {
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
@@ -32,10 +33,17 @@ footer {
 header > h1 {
   color: #ffcb05;
   font-family: PokemonSolid, sans-serif;
+  font-size: 10vw;
   letter-spacing: 5px;
-  margin-bottom: 30px;
+
   text-decoration: underline;
   -webkit-text-stroke: 3px #003a70;
+}
+
+header > button {
+  width: 100px;
+  padding: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 span,
@@ -89,4 +97,16 @@ main {
   font-family: PressStart2P, sans-serif;
   font-size: 2vw;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  header > h1 {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header > h1 {
+    font-size: 4vw;
+  }
 }

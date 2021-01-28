@@ -16,17 +16,29 @@
 :root {
   --light-bg: #fff;
   --light-text: #000;
+  --light-primary: #ffcb05;
+  --light-secondary: #003a70;
+  --light-border: #fff;
 
   --bg-fallback: var(--light-bg);
   --text: var(--light-text);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --border: var(--light-border);
 }
 
 .dark {
-  --dark-bg: #555;
+  --dark-bg: #333;
   --dark-text: #fff;
+  --dark-primary: #003a70;
+  --dark-secondary: #ffcb05;
+  --dark-border: #333;
 
   --bg-fallback: var(--dark-bg);
   --text: var(--dark-text);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --border: var(--dark-border);
 }
 
 body {
@@ -35,7 +47,7 @@ body {
 }
 
 a {
-  color: #003a70;
+  color: var(--secondary);
 }
 
 header {
@@ -80,8 +92,8 @@ main {
 }
 
 #app {
-  background-color: #003a70;
-  border: 10px double #fff;
+  background-color: var(--secondary);
+  border: 10px double var(--border);
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
@@ -92,7 +104,7 @@ main {
 
 .card {
   border: 2px solid #fff;
-  background-color: #ffcb05;
+  background-color: var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,14 +115,14 @@ main {
 }
 
 .card:hover {
-  border: 2px solid #003a70;
+  border: 2px solid var(--secondary);
   box-shadow: 0 0px 10px #777;
   transform: scale(1.1);
 }
 
 .card--id {
   background-color: #fff;
-  border: 2px solid #003a70;
+  border: 2px solid var(--secondary);
   border-radius: 50%;
   color: #003a70;
   padding: 1rem;

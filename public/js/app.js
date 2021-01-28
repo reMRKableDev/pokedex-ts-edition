@@ -65,7 +65,7 @@ var getPokémon = function (id) { return __awaiter(void 0, void 0, void 0, funct
     });
 }); };
 var showPokémon = function (pokémon) {
-    var pokémonCard = "\n        <div class=\"card\">\n            <span class=\"card--id\">#" + pokémon.id + "</span>\n            <img class=\"card--image\" src=" + pokémon.image + " alt=" + pokémon.name + " />\n            <h2 class=\"card--name\">" + pokémon.name + "</h2>\n            <span class=\"card--details\">" + pokémon.type + "</span>\n        </div>\n    ";
+    var pokémonCard = "\n        <div class=\"card\">\n            <span class=\"card--id\">" + pokémon.id + "</span>\n            <img class=\"card--image\" src=" + pokémon.image + " alt=" + pokémon.name + " />\n            <h2 class=\"card--name\">" + pokémon.name + "</h2>\n            <span class=\"card--details\">" + pokémon.type + "</span>\n        </div>\n    ";
     container.innerHTML += pokémonCard;
 };
 fetchApiData();

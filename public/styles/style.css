@@ -48,7 +48,8 @@ main {
 }
 
 #app {
-  border: 10px double black;
+  background-color: #003a70;
+  border: 10px double #fff;
   display: flex;
   flex-flow: row wrap;
   overflow: scroll;
@@ -58,8 +59,11 @@ main {
 }
 
 .card {
-  border: 2px solid #003a70;
+  border: 2px solid #fff;
   background-color: #ffcb05;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
   margin: 0.1rem;
   transition: all 0.2s ease-in-out;
@@ -67,11 +71,20 @@ main {
 }
 
 .card:hover {
-  transform: scale(1.1);
+  border: 2px solid #003a70;
   box-shadow: 0 0px 10px #777;
+  transform: scale(1.1);
 }
 
-.card > h2 {
+.card--id {
+  background-color: #fff;
+  border: 2px solid #003a70;
+  border-radius: 50%;
+  color: #003a70;
+  padding: 1rem;
+}
+
+.card--name {
   color: #3d7dca;
   font-family: PressStart2P, sans-serif;
   font-size: 2vw;

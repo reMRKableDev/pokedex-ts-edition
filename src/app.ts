@@ -32,7 +32,7 @@ const getPokémon = async (id: number): Promise<void> => {
 const showPokémon = (pokémon: IPokemon): void => {
     let pokémonCard: string = `
         <div class="card">
-            <span class="card--id">#${pokémon.id}</span>
+            <span class="card--id">${pokémon.id}</span>
             <img class="card--image" src=${pokémon.image} alt=${pokémon.name} />
             <h2 class="card--name">${pokémon.name}</h2>
             <span class="card--details">${pokémon.type}</span>

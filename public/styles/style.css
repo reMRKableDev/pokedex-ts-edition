@@ -16,17 +16,20 @@
 }
 
 h1 {
+  color: #ffcb05;
   font-family: PokemonSolid, sans-serif;
   letter-spacing: 5px;
   margin-bottom: 30px;
   text-align: center;
   text-decoration: underline;
+  -webkit-text-stroke: 3px #003a70;
 }
 
 h2 {
+  color: #3d7dca;
   font-family: PressStart2P, sans-serif;
-  text-transform: uppercase;
   font-size: 2vw;
+  text-transform: uppercase;
 }
 
 span {

@@ -69,3 +69,11 @@ var showPokémon = function (pokémon) {
     container.innerHTML += pokémonCard;
 };
 fetchApiData();
+var button = document.getElementById("color-switch");
+button.addEventListener("click", function () {
+    var body = document.querySelector("body");
+    body.classList.toggle("dark");
+    if (button) {
+        button.innerText = body.classList.contains("dark") ? "🌝" : "🌚";
+    }
+});

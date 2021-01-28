@@ -4,15 +4,34 @@
   font-family: PokemonSolid;
   src: url(../fonts/pokemon-solid.ttf);
 }
-
 @font-face {
   font-family: PressStart2P;
   src: url(../fonts/press-start-2p.ttf);
 }
-
 @font-face {
   font-family: PoppinsThin;
   src: url(../fonts/poppins-thin.ttf);
+}
+
+:root {
+  --light-bg: #fff;
+  --light-text: #000;
+
+  --bg-fallback: var(--light-bg);
+  --text: var(--light-text);
+}
+
+.dark {
+  --dark-bg: #555;
+  --dark-text: #fff;
+
+  --bg-fallback: var(--dark-bg);
+  --text: var(--dark-text);
+}
+
+body {
+  background: var(--bg-fallback);
+  color: var(--text);
 }
 
 a {
@@ -41,13 +60,18 @@ header > h1 {
 }
 
 header > button {
-  width: 100px;
+  background-color: var(--bg-fallback);
+  border: none;
+  cursor: pointer;
+  font-size: 1.8em;
   padding: 0.3rem;
-  margin-bottom: 1rem;
+  outline: none;
+  width: auto;
 }
 
 span,
-p {
+p,
+button {
   font-family: PoppinsThin, sans-serif;
 }
 

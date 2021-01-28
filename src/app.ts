@@ -43,3 +43,13 @@ const showPokémon = (pokémon: IPokemon): void => {
 }
 
 fetchApiData()
+
+const button: HTMLButtonElement | any = document.getElementById("color-switch");
+
+button.addEventListener("click", () => {
+    const body: HTMLBodyElement | any = document.querySelector("body");
+    body.classList.toggle("dark")
+    if (button) {
+        button.innerText = body.classList.contains("dark") ? "🌝" : "🌚";
+    }
+});

@@ -3,14 +3,17 @@
 @font-face {
   font-family: PokemonSolid;
   src: url(../fonts/pokemon-solid.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: PressStart2P;
   src: url(../fonts/press-start-2p.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: PoppinsThin;
   src: url(../fonts/poppins-thin.ttf);
+  font-display: swap;
 }
 
 :root {

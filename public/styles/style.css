@@ -88,7 +88,7 @@ button {
 }
 
 main {
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 #app {
@@ -98,7 +98,7 @@ main {
   flex-flow: row wrap;
   overflow: scroll;
   height: 60vh;
-  padding: 2rem;
+  padding: 0.5rem;
   margin: 1rem 0;
 }
 
@@ -111,7 +111,7 @@ main {
   padding: 1rem;
   margin: 0.1rem;
   transition: all 0.2s ease-in-out;
-  width: 33%;
+  width: 100%;
 }
 
 .card:hover {
@@ -142,7 +142,21 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+  main {
+    padding: 2rem;
+  }
+
+  #app {
+    padding: 2rem;
+  }
+
   header > h1 {
     font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 33%;
   }
 }
